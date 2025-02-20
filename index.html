@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="py-5 bg-light">
+    <div class="container text-center">
+      <img src="images/profile.jpg" alt="Profile Image" class="rounded-circle mb-3" width="150">
+      <h1>Welcome to My Website</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel purus at sapien.</p>
+      <address>123 Fargo, ND</address>
+      <!-- Placeholder for Video -->
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel purus at sapien.</p>
+      <h3>Interests & Hobbies</h3>
+      <ol>
+        <li>Video Games</li>
+        <li>Coffee</li>
+        <li>Photography</li>
+      </ol>
+      <h3>Favorite Video Games</h3>
+      <ul>
+        <li>Overwatch</li>
+        <li>Fortnite</li>
+        <li>Minecraft</li>
+      </ul>
+      <h3>Weekly Schedule</h3>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary"><td>Monday</td><td>Work</td></tr>
+          <tr class="table-success"><td>Tuesday</td><td>Work</td></tr>
+          <tr class="table-warning"><td>Wednesday</td><td>Classes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Portfolio Section with Carousel -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/project1.jpg" class="d-block w-100" alt="Project 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/project2.jpg" class="d-block w-100" alt="Project 2">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Form Validation -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Simon's Portfolio.</p>
+    <p>Favorite Websites: <a href="https://gbatemp.net" class="text-white">GBATemp</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
